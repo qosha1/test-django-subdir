@@ -1,0 +1,5 @@
+{% extends "pages/base.html" %}
+{% block title %}Contact - Lantern Books{% endblock %}
+{% block content %}<h1>Contact</h1>
+{% if sent %}<p>Thanks, we got your message.</p>{% else %}
+<form method="get"><label>Message <input name="message"></label><button type="submit">Send</button></form>{% endif %}{% endblock %}
